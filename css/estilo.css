@@ -1,0 +1,302 @@
+/*----------- CSS GENERAL pagina principal ------------*/
+
+*{
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+/*-------------navbar-----------------*/
+.conte {
+  background-color: #EBC326;
+}
+
+nav img{
+  width:90px;
+}
+
+nav .btn{
+color: black;
+}
+
+nav .btn{
+  border: solid thin #241b0461;
+}
+
+nav .btn:hover{
+  background-color:#D49B17;
+  border: solid thin #D49B17;
+}
+
+nav .dropdown-menu{
+  background-color: #EBC326;
+}
+
+nav .dropdown-menu li a:hover{
+  background-color:#D49B17 ;
+}
+nav a{
+  text-decoration: none;
+  color: black;
+}
+/*-------------Fin navbar-----------------*/
+
+/*-------------Main-----------------*/
+main{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h1{
+  color: #D49B17;
+  font-size: 30px;
+  margin-top: 10px;
+}
+
+hr{
+  border: 1px solid  black;
+  width: 100%;
+}
+
+h3{
+  text-align: center;
+  font-size: 28px;
+}
+
+.perro{
+  border: thin solid #D49B17;
+}
+.gato{
+  border: thin solid #D49B17;
+}
+
+.registro fieldset input{
+  background-color:#EBC326 ;
+}
+.card-body{
+  background-color: #D49B17;
+}
+.registro fieldset input:hover{
+  background-color:#D49B17 ;
+}
+.registro form input[type=text],form input[type=email],form input[type=password]{
+  border: thin solid black;
+}
+
+/* ---------- FIN MAIN ------------*/
+
+/*---------- footer ---------*/
+footer{
+  background-color: #EBC326;
+  text-align: center;
+}
+/*------- fin footer --------*/
+
+/* ------ CSS PARA MOVILES --------*/
+@media all and (min-width:320px){
+/*------ INTRO ---------*/
+.columnas{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 5px;
+}
+.columnas img{
+  width: 100%;
+  margin-bottom: 20px;
+  border-radius: 1rem;
+}
+/*--------FIN INTRO ----------*/
+
+/*------ GALERIA DE IMAGENES------------*/
+.mascotas{
+  display: flex;
+  flex-direction: column;
+  width: 95%
+}
+.mascotas img{
+  width: 100%; 
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+}
+.mascotas ul{
+  margin-top: 15px;
+}
+.perro{
+  margin-bottom: 15px;
+  border-radius: 1rem;
+  width: 100%;
+}
+.gato{
+  margin-bottom: 15px;
+  border-radius: 1rem;
+  width: 100%;
+}
+
+.galeria {
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+width: 100%;
+}
+.contenedor-imagenes{
+  width: 80%;
+  padding-bottom: 1rem; 
+}
+.contenedor-imagenes a{
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  width: 100%;
+  margin-top: 10px;
+}
+.galeria-img{
+  width: 100%;
+  height: 240px;
+  margin-top: 1rem;
+  border-radius: 1rem;
+  padding: 0.5em;
+}
+
+/*------- FIN GALERIA DE IMAGENES -----------*/
+
+/*------FORMULARIO DE REGISTRO------------*/
+.registro form{
+  width: 95%;
+  margin: 0 auto;
+}
+.registro form input[type=text],form input[type=email],form input[type=password],form label{
+  display: block;
+  font-size: 1em;
+  padding: 0.2em;
+  width: 100%;
+}
+.registro form .boton-formu{
+  display: block;
+  width: 100%;
+  padding: 0.5em;
+  font-size: 1em;
+  margin-bottom: 1vh;
+  margin-top: 1vh;
+}
+.registro fieldset{
+  margin-top: 1em;
+}
+/*-------- FIN FORMULARIO DE REGISTRO -----------*/
+
+/*--------  footer -----------*/
+footer{
+  margin-top: 1em;
+  padding: 1em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer p{
+  margin-top: 1em;
+}
+/*-------- FIN footer -----------*/
+}
+
+/* ------ CSS PARA IPADS/TABLETS --------*/
+
+@media all and (min-width:481px){
+
+  .contenedor-imagenes .contenedor{
+    width: 50%;
+    padding: 5px;
+    }
+  .galeria-img{
+    max-width: 100%;
+    max-height: 230px;
+  }
+  .contenedor-imagenes{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+  
+}
+
+/* ------ CSS PARA LAPTOS --------*/
+@media all and (min-width:769px){
+h1{
+  margin-top: 25px;
+}
+.columnas{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 30px;
+  }
+.imagen{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 45%;
+  
+}
+.imagen img{
+  width: 100%;
+}
+.texto{
+  width: 45%;
+}
+
+.mascotas{
+  display: flex;
+  flex-direction:row;
+  justify-content: space-evenly;
+  padding: 10px;
+
+}
+.mascotas img{
+  width: 100%; 
+  height:200px ;
+}
+.mascotas .perro{
+  width: 46%;
+
+}
+.mascotas .gato{
+  width: 46%;
+}
+.galeria-img{
+  max-width: 85%;
+  max-height: 250px;
+  }
+}
+
+@media all and (min-width:1025px){
+  .mascotas{
+    display: flex;
+    flex-direction:row;
+    justify-content: space-evenly;
+    padding: 10px;
+  
+  }
+  .mascotas img{
+    width: 100%; 
+    height:350px ;
+  }
+  .mascotas .perro{
+    width: 40%;
+  
+  }
+  .mascotas .gato{
+    width: 40%;
+  }
+
+  .contenedor-imagenes .contenedor{
+    width: 25%;
+    padding: 5px;
+    }
+  .galeria-img{
+    max-width: 100%;
+  }
+} 
